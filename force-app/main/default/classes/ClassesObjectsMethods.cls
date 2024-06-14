@@ -124,16 +124,18 @@ public with sharing class ClassesObjectsMethods {
      */
     public static Integer countVowels(String str) {
         // Initialize the result Integer
-
-        /*
-        for () {
-            // get individual characters from the string - hint use substring or split
-            // check if the character is a vowel
-            // if it is a vowel, increment the result Integer
+        Integer vowelCount = 0;
+        String currentLetter;
+        
+        for (Integer i =0; i < str.length(); i++) {
+            currentLetter = str.substring(i, i+1);
+            // If the string contains the current character, add 1 to the vowelCount
+            if (currentLetter == 'a' || currentLetter == 'e' || currentLetter == 'i' || currentLetter == 'o' || currentLetter == 'u') {
+                vowelCount++;
+            }
         }
-        */
+        return vowelCount; // Replace null with the variable you used to store the result
 
-        return null; // Replace null with the variable you used to store the result
     }
 
     /**
