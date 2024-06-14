@@ -185,7 +185,7 @@ public with sharing class ClassesObjectsMethods {
         
         //Refactor    
         Double result = Math.abs(Math.pow(a, 2) - Math.pow(b, 2));
-        
+
         // Return the result
         return result; // Replace null with the variable you used to store the result
     }
@@ -198,9 +198,10 @@ public with sharing class ClassesObjectsMethods {
      */
     public static Integer generateRandomNumber() {
         // Use Math class to generate number between 50 and 100
+        Integer randomNumber50to60 = Math.round((Math.random() * 50) + 50);
 
         // Return the random integer
-        return null; // Replace null with the variable you used to store the result
+        return randomNumber50to60; // Replace null with the variable you used to store the result
     }
 
     /**
