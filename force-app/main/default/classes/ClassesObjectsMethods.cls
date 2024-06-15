@@ -288,9 +288,9 @@ public with sharing class ClassesObjectsMethods {
      */
     public class Book {
         // Declare three public instance variables - title, author, pages
-        String title;
-        String author;
-        Integer pages;
+        public String title;
+        public String author;
+        public Integer pages;
     
         // Book constructor to initialize the title and author
         public Book(String title, String author) {
