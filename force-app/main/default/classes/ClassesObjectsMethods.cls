@@ -298,6 +298,13 @@ public with sharing class ClassesObjectsMethods {
             this.title = title;
             this.author = author;
         }
+
+        public Book(String title, String author, Integer pages) {
+            // Initialize the title and author
+            this.title = title;
+            this.author = author;
+            this.pages = pages;
+        }
     
         // Method that returns the details of the book
         public String getBookDetails() {
@@ -335,18 +342,23 @@ public with sharing class ClassesObjectsMethods {
      */
     public static List<Book> generateBookList(Book myBook1) {
         // Create a list of books
+        List<Book> myBookList= new List<Book>(); 
 
         // Update the title and author of myBook1
+        Book myB1 = new Book('J.K. Rowling', 'Harry Potter and the Chamber of Secrets');
 
         // Update the pages for myBook1 to 352
+        myB1.pages = 352;
 
         // Create a new Book object with title "A Brief History of Time" and author "Stephen Hawking"
-
         // Update the pages for A Brief History of Time to 256
+        Book myB2 = new Book('A Brief History of Time', 'Stephen Hawking', 256);
 
         // Add the book to the list
-        
-        return null; // Replace null with the variable you used to store the result      
+        myBookList.add(myB1);
+        myBookList.add(myB2);
+
+        return myBookList; // Replace null with the variable you used to store the result      
     }
 
 
