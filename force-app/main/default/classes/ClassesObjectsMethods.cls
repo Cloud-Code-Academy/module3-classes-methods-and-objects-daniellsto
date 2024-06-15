@@ -40,14 +40,14 @@ public with sharing class ClassesObjectsMethods {
      */
     public static List<String> practiceStringMethods() {
         // Initialize a String with 'Hello, Salesforce!'
-        String s = 'Hello Salesforce';
+        String s = 'Hello, Salesforce!';
 
         // Get the length of the String        
         // Get a substring of the String of the first 5 characters
         // Convert the String to lower case
 
         String numberAsString = String.valueOf(s.length());
-        String sSubString = s.substring(0, 4);
+        String sSubString = s.substring(0, 5);
         String sLowerCase = s.toLowerCase();
         
         // Return the list with the string data
